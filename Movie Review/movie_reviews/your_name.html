@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../js/your_name.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <title>Your Name</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>Your Name</h2>
+            <p>Directed by Makoto Shinkai</p>
+            <hr>
+            <img src="../images/your_name.jpg" alt="Your Name movie poster">
+            <section class="movie-trailer">
+                <h2>Watch the Trailer!</h2>
+                <video controls width="450" height="260" autoplay muted>
+                    <source src="movie_trailers/Your_Name_ Trailer.mp4" type="video/mp4">
+                </video>
+                </section>
+                <hr>
+                <h3>Summary</h3>
+                <hr>
+            <p>Your Name is a Japanese animated romantic fantasy film produced by CoMix Wave Films, written and directed by Makoto Shinkai, and featuring character designs by Masayoshi Tanaka and music by Radwimps. The movie tells the story of a high school girl in rural Japan and a high school boy in Tokyo who suddenly and inexplicably begin to swap bodies.</p>
+        </div>
+
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="taki" onclick="showImage('Taki', 'character_images/taki.jpg', event); return false;">Taki Tachibana</a></li>
+                <li><a href="#" id="mitsuha" onclick="showImage('Mitsuha', 'character_images/mitsuha.jpg', event); return false;">Mitsuha Miyamizu</a></li>
+                <li><a href="#" id="yotsuha" onclick="showImage('Yotsuha', 'character_images/yotsuha.jpg', event); return false;">Yotsuha Miyamizu</a></li>
+                <li><a href="#" id="yukari" onclick="showImage('Yukari', 'character_images/yukari.jpg', event); return false;">Yukari Yukino</a></li>
+                <li><a href="#" id="sayaka" onclick="showImage('Sayaka', 'character_images/sayaka.jpg', event); return false;">Sayaka Natori</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/taki.jpg" alt="Picture of Taki Tachibana">
+            </div>
+
+        </div>
+    </main>
+
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="user-comments">
+          <!-- comments will get dynamically addded here from js -->
+        </div>
+    </div>
+
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/32281/Kimi_no_Na_wa">https://myanimelist.net/anime/32281/Kimi_no_Na_wa</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+</body>
+</html>

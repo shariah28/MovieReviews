@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/princess_mononoke.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <title>Princess Mononoke</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+    
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>Princess Mononoke</h2>
+            <p>Directed by Hayao Miyazaki</p>
+            <hr>
+            <img src="../images/princess_mononoke.jpg" alt="Princess Mononoke movie poster">
+            <section class="movie-trailer">
+                <h2>Watch the Trailer!</h2>
+                <video controls width="450" height="260" autoplay muted>
+                    <source src="movie_trailers/Princess_Mononoke_Trailer.mp4" type="video/mp4">
+                </video>
+                </section>
+                <hr>
+                <h3>Summary</h3>
+                <hr>
+            <p>Princess Mononoke is a Japanese animated epic historical fantasy film written and directed by Hayao Miyazaki, produced by Studio Ghibli and released by Toho. The movie is set in the late Muromachi period of Japan with fantasy elements and tells the story of Ashitaka, a young prince who becomes involved in a struggle between the gods of a forest and the humans who consume its resources.</p>
+        </div>
+
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="san" onclick="showImage('San', 'character_images/san.jpg', event); return false;">San (Princess Mononoke)</a></li>
+                <li><a href="#" id="ashitaka" onclick="showImage('Ashitaka', 'character_images/ashitaka.jpg', event); return false;">Ashitaka</a></li>
+                <li><a href="#" id="moro" onclick="showImage('Moro', 'character_images/moro.jpg', event); return false;">Moro</a></li>
+                <li><a href="#" id="jigo" onclick="showImage('Jigo', 'character_images/jigo.jpg', event); return false;">Jigo</a></li>
+                <li><a href="#" id="toki" onclick="showImage('Toki', 'character_images/toki.jpg', event); return false;">Toki</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/san.jpg" alt="Picture of San">
+            </div>
+
+        </div>
+    </main>
+      
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="user-comments">
+          <!-- comments will get dynamically added here from js -->
+        </div>
+    </div>
+
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/164/Mononoke_Hime">https://myanimelist.net/anime/164/Mononoke_Hime</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+</body>
+</html>

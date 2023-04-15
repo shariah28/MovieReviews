@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/suzume.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <title>Suzume</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+    
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>Suzume</h2>
+            <p>Directed by Makoto Shinkai</p>
+            <hr>
+            <img src="../images/suzume.jpg" alt="Suzume movie poster">
+            <section class="movie-trailer">
+                <h2>Watch the Trailer!</h2>
+                <video controls width="450" height="260" autoplay muted>
+                    <source src="movie_trailers/Suzume_Trailer.mp4" type="video/mp4">
+                </video>
+                </section>
+                <hr>
+                <h3>Summary</h3>
+                <hr>
+            <p>Suzume is a Japanese drama film directed by Makoto Shinkai, featuring music by   Haru Yamada. The movie follows the story of a young woman named Suzume, who meets a man named Souta who talks about doors. Suzume follows him to a worn-away door and opens it to find a new world.</p>
+        </div>
+
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="suzume" onclick="showImage('Suzume', 'character_images/suzume.jpg', event); return false;">Suzume</a></li>
+                <li><a href="#" id="souta" onclick="showImage('Souta', 'character_images/souta.jpg', event); return false;">Souta</a></li>
+                <li><a href="#" id="daijin" onclick="showImage('Daijin', 'character_images/daijin.jpg', event); return false;">Daijin</a></li>
+                <li><a href="#" id="tomoya" onclick="showImage('Tomoya', 'character_images/tomoya.jpg', event); return false;">Tomoya</a></li>
+                <li><a href="#" id="tsubame" onclick="showImage('Tsubame', 'character_images/tsubame.jpg', event); return false;">Tsubame</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/suzume.jpg" alt="Picture of Suzume">
+            </div>
+
+        </div>
+    </main>
+      
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="user-comments">
+          <!-- comments will get dynamically addded here from js -->
+        </div>
+    </div>
+ 
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/50594/Suzume_no_Tojimari">https://myanimelist.net/anime/50594/Suzume_no_Tojimari</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+</body>
+</html>

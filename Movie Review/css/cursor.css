@@ -1,0 +1,6 @@
+
+/*Code for a custom cursor, I'm trying to replace it with 
+an anime icon, but the urls aren't working but i'll figure it out*/
+body {
+  cursor: url("https://i.stack.imgur.com/KDrS2.png"), pointer
+  }

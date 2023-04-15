@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/the_disappearance_of_haruhi_suzumiya.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="../css/cursor.css">
+    <title>The Disappearance of Haruhi Suzumiya</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+    
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>The Disappearance of Haruhi Suzumiya</h2>
+            <p>Directed by Tatsuya Ishihara</p>
+            <hr>
+            <img src="../images/the_disappearance_of_haruhi_suzumiya.jpg" alt="The Disappearance of Haruhi Suzumiya movie poster">
+            <section class="movie-trailer">
+                <h2>Watch the Trailer!</h2>
+                <video controls width="450" height="260" autoplay muted>
+                    <source src="movie_trailers/The_Disappearance_of_Haruhi_Suzumiya_Trailer.mp4" type="video/mp4">
+                </video>
+                </section>
+                <hr>
+                <h3>Summary</h3>
+                <hr>
+            <p>The Disappearance of Haruhi Suzumiya is a Japanese animated science-fiction film produced by Kyoto Animation, directed by Tatsuya Ishihara and written by Fumihiko Shimo, based on the light novel series of the same name by Nagaru Tanigawa. The movie follows the story of high school student Kyon as he wakes up one day to find that his classmate and friend Haruhi Suzumiya has disappeared, along with all traces of her existence.</p>
+        </div>
+
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="kyon" onclick="showImage('Kyon', 'character_images/kyon.jpg', event); return false;">Kyon</a></li>
+                <li><a href="#" id="haruhi" onclick="showImage('Haruhi', 'character_images/haruhi.jpg', event); return false;">Haruhi Suzumiya</a></li>
+                <li><a href="#" id="yuki" onclick="showImage('Yuki', 'character_images/yuki.jpg', event); return false;">Yuki Nagato</a></li>
+                <li><a href="#" id="mikuru" onclick="showImage('Mikuru', 'character_images/mikuru.jpg', event); return false;">Mikuru Asahina</a></li>
+                <li><a href="#" id="itsuki" onclick="showImage('Itsuki', 'character_images/itsuki.jpg', event); return false;">Itsuki Koizumi</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/kyon.jpg" alt="Picture of Kyon">
+            </div>
+
+        </div>
+    </main>
+
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="user-comments">
+          <!-- comments will get dynamically addded here from js -->
+        </div>
+    </div>
+
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/7311/Suzumiya_Haruhi_no_Shoushitsu">https://myanimelist.net/anime/7311/Suzumiya_Haruhi_no_Shoushitsu</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+</body>
+</html>

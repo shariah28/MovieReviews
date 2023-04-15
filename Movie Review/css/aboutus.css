@@ -1,0 +1,39 @@
+/* Style for the page content */
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Style for the header */
+header {
+	background-color: #31572c;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+body{
+	background-color: #a3b18a;
+}
+
+/* Style for the navigation bar */
+nav {
+	background-color: #588157;
+	color: white;
+	overflow: hidden;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Style for the navigation bar links */
+nav a {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+}
+
+/* Style for the active navigation bar link */
+nav a.active {
+	background-color: #a3b18a;
+}

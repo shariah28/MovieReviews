@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/howls_moving_castle.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="../css/cursor.css">
+    <title>Howl's Moving Castle</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+    
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>Howl's Moving Castle</h2>
+            <p>Directed by Hayao Miyazaki</p>
+            <hr>
+            <img src="../images/howls_moving_castle.jpg" alt="Howl's Moving Castle movie poster">
+            <section class="movie-trailer">
+                <h2>Watch the Trailer!</h2>
+                <video controls width="450" height="260" autoplay muted>
+                    <source src="movie_trailers/Howl's_Moving_Castle_Trailer.mp4" type="video/mp4">
+                </video>
+                </section>
+                <hr>
+                <h3>Summary</h3>
+                <hr>
+            <p>Howl's Moving Castle is a Japanese animated fantasy film produced by Studio Ghibli, directed by Hayao Miyazaki and based on the novel of the same name by Diana Wynne Jones. The movie follows the story of a young girl named Sophie Hatter, who is turned into an old woman by a witch and seeks the help of the wizard Howl, who lives in a magical moving castle.</p>
+        </div>
+
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="howl" onclick="showImage('Howl', 'character_images/howl.jpg', event); return false;">Howl</a></li>
+                <li><a href="#" id="sophie" onclick="showImage('Sophie', 'character_images/sophie.jpg', event); return false;">Sophie Hatter</a></li>
+                <li><a href="#" id="calcifer" onclick="showImage('Calcifer', 'character_images/calcifer.jpg', event); return false;">Calcifer</a></li>
+                <li><a href="#" id="markl" onclick="showImage('Markl', 'character_images/markl.jpg', event); return false;">Markl</a></li>
+                <li><a href="#" id="witch" onclick="showImage('Witch of the Waste', 'character_images/witch.jpg', event); return false;">Witch of the Waste</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/howl.jpg" alt="Picture of Howl">
+            </div>
+
+        </div>
+    </main>
+      
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="user-comments">
+          <!-- comments will get dynamically addded here from js -->
+        </div>
+    </div>
+
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro">https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+</body>
+</html>
