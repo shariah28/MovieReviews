@@ -3,12 +3,10 @@
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   width: 100%;
-  overflow: hidden;
   position: relative;
   white-space: nowrap;
-  scroll-behavior: smooth;
   height: 500px;
-  margin: 40px 20px 0px 20px;
+  margin: 40px 20px 0 20px;
 }
 
 .movie-box {
@@ -21,7 +19,8 @@
   background-color: #F5F5DC; /* background color of the box */
   border: 2px solid black;
   box-sizing: border-box; /* Include border in box size */
-  width: calc(60% - 90px); /* adjusting the width to fit the images */
+  width: 100%;
+  max-width: 820px; /* Set maximum width */
 }
 
 .movie {
@@ -30,18 +29,23 @@
   position: relative;
   flex: 0 0 calc(25% - 20px); /* Set width of each movie to 25% of panel width minus margin */
   height: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .movie-title {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.7); /* This is the background color of the movie title box */
-	color: #fff;
-	padding: 10px;
-	margin: 0;
-	box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  white-space: nowrap; /* This prevents the text from wrapping */
+  overflow: hidden; /* This hides any overflow */
+  text-overflow: ellipsis; /* This adds an ellipsis at the end of the line */
 }
 
 .movie img {
@@ -58,11 +62,16 @@
   }
 }
 
+html {
+  overflow-y: scroll;
+}
+
 header {
 	background-color: #31572c;
 	color: white;
 	padding: 10px;
 	text-align: center;
+  font-family: cursive;
 }
 
 body{
@@ -84,7 +93,7 @@ nav a {
 }
 
 nav a.active {
-	background-color: #a3b18a;
+	background-color: #31572c;
 }
 
 /* hide the overflow scrollbar */
@@ -121,7 +130,7 @@ nav a.active {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #aaa;
+  background-color: #ddd;
   margin: 0 5px;
 }
 
@@ -129,9 +138,7 @@ nav a.active {
   background-color: #555;
 }
 
-#section1 .movie,
-#section2 .movie,
-#section3 .movie {
+#section1 .movie, #section2 .movie, #section3 .movie {
   width: calc(100% / 3);
 }
 
@@ -146,5 +153,26 @@ nav a.active {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+}
+
+/* Style for scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Style for the color of the track of scrollbar */
+::-webkit-scrollbar-track {
+  background: #a3b18a;
+}
+ 
+/* Style for the handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+/* Style for color for the hover on the handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
 }

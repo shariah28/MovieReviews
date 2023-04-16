@@ -44,29 +44,48 @@ document.addEventListener("DOMContentLoaded", function()
     });
 
     // This is how to comments section will work to auto update and add the comments
-    const commentForm = document.getElementById('comments');
+    const commentForm = document.getElementById('comment-form');
     const userComments = document.querySelector('.user-comments');
+    const url = window.location.href; // Get the URL of the current page
 
-    commentForm.addEventListener('submit', function(event) 
-    {
-        event.preventDefault(); // prevent form submission
+    // Load existing comments from local storage
+    const existingComments = JSON.parse(localStorage.getItem(`comments-${url}`)) || [];
+    for (const comment of existingComments) {
+      const newComment = createCommentElement(comment.name, comment.text);
+      userComments.appendChild(newComment);
+    }
 
-        const nameInput = document.getElementById('name');
-        const commentInput = document.getElementById('comment');
+    commentForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // prevent form submission
 
-        // create new comment element
-        const newComment = document.createElement('div');
-        newComment.className = 'comment';
-        newComment.innerHTML = `
-            <h4>${nameInput.value}</h4>
-            <p>${commentInput.value}</p>
-        `;
+      const nameInput = document.getElementById('name');
+      const commentInput = document.getElementById('comment');
+      const comment = {
+        name: nameInput.value,
+        text: commentInput.value
+      };
 
-        // add new comment to comments section
-        userComments.appendChild(newComment);
+      // Save the new comment to local storage
+      const comments = JSON.parse(localStorage.getItem(`comments-${url}`)) || [];
+      comments.push(comment);
+      localStorage.setItem(`comments-${url}`, JSON.stringify(comments));
 
-        // clear form inputs
-        nameInput.value = '';
-        commentInput.value = '';
+      // create new comment element
+      const newComment = createCommentElement(comment.name, comment.text);
+      userComments.appendChild(newComment);
+
+      // clear form inputs
+      nameInput.value = '';
+      commentInput.value = '';
     });
+
+    function createCommentElement(name, text) {
+      const newComment = document.createElement('section');
+      newComment.className = 'comment';
+      newComment.innerHTML = `
+        <h4>${name}</h4>
+        <p>${text}</p>
+      `;
+      return newComment;
+    }
 });

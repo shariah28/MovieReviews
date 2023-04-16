@@ -41,6 +41,11 @@ nav a {
     text-decoration: none;
 }
 
+/* Style the headers */
+main h2, main h3 {
+    text-align: center;
+}
+
 /* Style the hr dividers placed within the page*/
 hr {
     color: #16697a;
@@ -105,19 +110,73 @@ nav a.active {
     background-color: #3e8e41;
 }
 
-.movie-trailer{
+.comment {
+    margin: 10px 0 0 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    background-color: #489fb5;
+}
+
+.movie-trailer {
     display: inline-block;
     margin-left: 50%;
     padding-top: -80%;
 }
-hr{
+
+hr {
     border-top: 2px dashed #16697a;
 }
 
-ul{
+ul {
     list-style-type: katakana;
     color: black;
     font-style: italic;
     font-family: cursive;
     font-weight: 700;
+}
+
+.movie-info p:first-of-type {
+    text-align: center;
+}
+
+.movie-info, .comments, .user-comments, footer {
+    margin-left: 240px;
+}
+
+.movie-info img, .movie-info video {
+    background-color: #F5F5DC; /* background color of the box */
+    border: 2px solid black;
+    box-sizing: border-box; /* Include border in box size */
+}
+
+.side-panel {
+    position: fixed;
+    left: 0;
+    top: 160px;
+    width: 200px;
+    height: 100%;
+    background-color: #82c0cc;
+    padding: 20px;
+}
+
+/* Style for scrollbar width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Style for the color of the track of scrollbar */
+::-webkit-scrollbar-track {
+    background: #82c0cc;
+}
+ 
+/* Style for the handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+}
+
+/* Style for color for the hover on the handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
 }
