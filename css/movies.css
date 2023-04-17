@@ -1,0 +1,182 @@
+/* Style for the scrolling panel */
+.panel {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* Style for each movie thumbnail */
+.movie {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Style for the header */
+header {
+    background-color: #16697a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+}
+
+body{
+	background-color:#82c0cc;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #489fb5;
+    color: white;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the navigation bar links */
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Style the headers */
+main h2, main h3 {
+    text-align: center;
+}
+
+/* Style the hr dividers placed within the page*/
+hr {
+    color: #16697a;
+  }
+
+/* Style for the active navigation bar link */
+nav a.active {
+    background-color: #16697a;
+}
+
+/* Style to keep the character images from being huge */
+#character-image img {
+    width: 200px;
+    height: 300px;
+}
+
+.comments {
+    margin-top: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #489fb5;
+}
+
+.comments h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.comments form {
+    margin-top: 20px;
+}
+
+.comments label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.comments input[type="text"],
+.comments textarea {
+    padding: 5px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.comments input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.comments input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.comment {
+    margin: 10px 0 0 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    background-color: #489fb5;
+}
+
+.movie-trailer {
+    display: inline-block;
+    margin-left: 50%;
+    padding-top: -80%;
+}
+
+hr {
+    border-top: 2px dashed #16697a;
+}
+
+ul {
+    list-style-type: katakana;
+    color: black;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+.movie-info p:first-of-type {
+    text-align: center;
+}
+
+.movie-info, .comments, .user-comments, footer {
+    margin-left: 240px;
+}
+
+.movie-info img, .movie-info video {
+    background-color: #F5F5DC; /* background color of the box */
+    border: 2px solid black;
+    box-sizing: border-box; /* Include border in box size */
+}
+
+.side-panel {
+    position: fixed;
+    left: 0;
+    top: 160px;
+    width: 200px;
+    height: 100%;
+    background-color: #82c0cc;
+    padding: 20px;
+}
+
+/* Style for scrollbar width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Style for the color of the track of scrollbar */
+::-webkit-scrollbar-track {
+    background: #82c0cc;
+}
+ 
+/* Style for the handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+}
+
+/* Style for color for the hover on the handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}

@@ -1,0 +1,99 @@
+/* Style for the page content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #588157;
+    border-radius: 5px;
+    background-color: #a3b18a;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* Style for the header */
+header {
+    background-color: #31572c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+}
+
+body{
+	background-color: #a3b18a;
+}
+/* Style for the navigation bar */
+nav {
+    background-color: #588157;
+    color: white;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the navigation bar links */
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Style for the active navigation bar link */
+nav a.active {
+    background-color: #31572c;
+}
+
+/* Style for the contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the form input fields */
+input[type=text], input[type=email], input[type=tel] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #555;
+    border-radius: 4px;
+}
+
+/* Style for the form submit button */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type=text], input[type=email], input[type=tel], #message {
+    background-color: #F5F5DC;
+}
+
+/* Style for scrollbar width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Style for the color of the track of scrollbar */
+::-webkit-scrollbar-track {
+    background: #a3b18a;
+}
+ 
+/* Style for the handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+}
+
+/* Style for color for the hover on the handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
