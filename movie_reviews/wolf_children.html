@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/wolf_children.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="../css/cursor.css">
+    <title>Wolf Children</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+    
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>Wolf Children</h2>
+            <p>Directed by Mamoru Hosoda</p>
+            <hr>
+            <img src="../images/wolf_children.jpg" alt="Wolf Children movie poster">
+            <section class="movie-trailer">
+                <h2>Watch the Trailer!</h2>
+                <video controls width="450" height="260" autoplay muted>
+                    <source src="movie_trailers/Wolf_Children_Trailer.mp4" type="video/mp4">
+                </video>
+                </section>
+                <hr>
+                <h3>Summary</h3>
+                <hr>
+            <p>Wolf Children is a Japanese animated drama film produced by Studio Chizu, directed by Mamoru Hosoda and written by Hosoda and Satoko Okudera. The movie tells the story of a young woman named Hana who falls in love with a man who can transform into a wolf. They have two children who also have the ability to transform into wolves and must navigate the challenges of raising a family of "wolf children" on their own.</p>
+        </div>
+
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="hana" onclick="showImage('Hana', 'character_images/hana.jpg', event); return false;">Hana</a></li>
+                <li><a href="#" id="ame" onclick="showImage('Ame', 'character_images/ame.jpg', event); return false;">Ame</a></li>
+                <li><a href="#" id="yuki" onclick="showImage('Yuki', 'character_images/yuki_wolf.jpg', event); return false;">Yuki</a></li>
+                <li><a href="#" id="ookami" onclick="showImage('Ookami', 'character_images/ookami.jpg', event); return false;">Ookami</a></li>
+                <li><a href="#" id="souhei" onclick="showImage('Souhei', 'character_images/souhei.jpg', event); return false;">Souhei</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/hana.jpg" alt="Picture of Hana">
+            </div>
+
+        </div>
+    </main>
+      
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="user-comments">
+        <section class="comment">
+            <!-- comments will get dynamically addded here from js -->
+        </section>
+    </div>
+
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/12355/Ookami_Kodomo_no_Ame_to_Yuki">https://myanimelist.net/anime/12355/Ookami_Kodomo_no_Ame_to_Yuki</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+</body>
+</html>

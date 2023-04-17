@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../js/violet_evergarden.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="../css/cursor.css">
+    <title>Violet Evergarden: The Movie</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>Violet Evergarden Movie</h2>
+            <p>Directed by Taichi Ishidate</p>
+            <hr>
+            <img src="../images/violet_evergarden.jpg" alt="Violet Evergarden Movie poster">
+            <section class="movie-trailer">
+                <h2>Watch the Trailer!</h2>
+                <video controls width="450" height="260" autoplay muted>
+                    <source src="movie_trailers/Violet_Evergarden_Trailer.mp4" type="video/mp4">
+                </video>
+                </section>
+                <hr>
+                <h3>Summary</h3>
+                <hr>
+            <p>Violet Evergarden: The Movie is a Japanese animated drama film produced by Kyoto Animation, directed by Taichi Ishidate and written by Reiko Yoshida, featuring character designs by Akiko Takase and music by Evan Call. The movie follows the story of Violet Evergarden as she continues to live her life after the end of the anime series, and her encounter with a young boy named Isabella York.</p>
+        </div>
+
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="violet" onclick="showImage('Violet', 'character_images/violet.jpg', event); return false;">Violet Evergarden</a></li>
+                <li><a href="#" id="hodgins" onclick="showImage('Claudia', 'character_images/hodgins.jpg', event); return false;">Claudia Hodgins</a></li>
+                <li><a href="#" id="gilbert" onclick="showImage('Gilbert', 'character_images/gilbert.jpg', event); return false;">Gilbert Bougainvillea</a></li>
+                <li><a href="#" id="cattleya" onclick="showImage('Cattleya', 'character_images/cattleya.jpg', event); return false;">Cattleya Baudelaire</a></li>
+                <li><a href="#" id="benedict" onclick="showImage('Benedict', 'character_images/benedict.jpg', event); return false;">Benedict Blue</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/violet.jpg" alt="Picture of Violet Evergarden">
+            </div>
+
+        </div>
+    </main>
+
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="user-comments">
+        <section class="comment">
+            <!-- comments will get dynamically addded here from js -->
+        </section>
+    </div>
+    
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/37987/Violet_Evergarden_Movie">https://myanimelist.net/anime/37987/Violet_Evergarden_Movie</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+</body>
+</html>

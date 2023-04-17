@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/a_silent_voice.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="../css/cursor.css">
+    <title>A Silent Voice</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+    
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>A Silent Voice</h2>
+            <p>Directed by Naoko Yamada</p>
+            <hr>
+            <img src="../images/a_silent_voice.jpg" alt="A Silent Voice movie poster">
+            <section class="movie-trailer">
+            <h2>Watch the Trailer!</h2>
+            <video controls width="450" height="260" autoplay muted>
+                <source src="movie_trailers/a_silent_voice_trailer.mp4" type="video/mp4">
+            </video>
+            </section>
+            <hr>
+            <h3>Summary</h3>
+            <hr>
+            <p>A Silent Voice is a Japanese animated teen drama film produced by Kyoto Animation, directed by Naoko Yamada and written by Reiko Yoshida, featuring character designs by Futoshi Nishiya and music by Kensuke Ushio. The movie follows the story of a young man named Shouya Ishida, who tries to make amends with a deaf girl named Shouko Nishimiya whom he had bullied in elementary school.</p>
+            <hr>
+        </div>
+        
+        
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="shouya" onclick="showImage('Shouya', 'character_images/shouya.jpg', event); return false;">Shouya Ishida</a></li>
+                <li><a href="#" id="shouko" onclick="showImage('Shouko', 'character_images/shouko.jpg', event); return false;">Shouko Nishimiya</a></li>
+                <li><a href="#" id="miyoko" onclick="showImage('Miyoko', 'character_images/miyoko.jpg', event); return false;">Miyoko Sahara</a></li>
+                <li><a href="#" id="naoka" onclick="showImage('Naoka', 'character_images/naoka.jpg', event); return false;">Naoka Ueno</a></li>
+                <li><a href="#" id="yuzuru" onclick="showImage('Yuzuru', 'character_images/yuzuru.jpg', event); return false;">Yuzuru Kawai</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/shouya.jpg" alt="Picture of Shouya Ishida">
+            </div>
+
+        </div>
+    </main>
+      
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="user-comments">
+        <section class="comment">
+            <!-- comments will get dynamically addded here from js -->
+        </section>
+    </div>
+
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/28851/Koe_no_Katachi">https://myanimelist.net/anime/28851/Koe_no_Katachi</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+</body>
+</html>

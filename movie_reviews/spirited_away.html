@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../js/spirited_away.js"></script>
+    <link rel="stylesheet" href="../css/movies.css">
+    <link rel="stylesheet" href="../css/cursor.css">
+    <title>Spirited Away</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+
+    <nav>
+        <a href="../home.html">Home</a>
+        <a class="active" href="../reviews.html">Reviews</a>
+        <a href="../about_us.html">About Us</a>
+        <a href="../contact_us.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="movie-info">
+            <h2>Spirited Away</h2>
+            <p>Directed by Hayao Miyazaki</p>
+            <hr>
+            <img src="../images/spirited_away.jpg" alt="Spirited Away movie poster">
+            <section class="movie-trailer">
+                <h2>Watch the Trailer!</h2>
+                <video controls width="450" height="260" autoplay muted>
+                    <source src="movie_trailers/spirited_away_Trailer.mp4" type="video/mp4">
+                </video>
+                </section>
+                <hr>
+                <h3>Summary</h3>
+                <hr>
+            <p>Spirited Away is a Japanese animated film directed by Hayao Miyazaki and produced by Studio Ghibli. The movie tells the story of a young girl named Chihiro, who finds herself trapped in a magical world of spirits and supernatural beings, and her quest to find her way back home.</p>
+        </div>
+
+        <div class="side-panel">
+            <h3>Characters</h3>
+            <ul>
+                <li><a href="#" id="chihiro" onclick="showImage('Chihiro', 'character_images/chihiro.jpg', event); return false;">Chihiro Ogino</a></li>
+                <li><a href="#" id="haku" onclick="showImage('Haku', 'character_images/haku.jpg', event); return false;">Haku</a></li>
+                <li><a href="#" id="yubaba" onclick="showImage('Yubaba', 'character_images/yubaba.jpg', event); return false;">Yubaba</a></li>
+                <li><a href="#" id="lin" onclick="showImage('Lin', 'character_images/lin.jpg', event); return false;">Lin</a></li>
+                <li><a href="#" id="no-face" onclick="showImage('No-Face', 'character_images/noface.jpg', event); return false;">No-Face</a></li>
+            </ul>
+
+            <div id="character-image">
+                <img src="character_images/chihiro.jpg" alt="Picture of Chihiro Ogino">
+            </div>
+
+        </div>
+    </main>
+
+    <div class="comments">
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="user-comments">
+        <section class="comment">
+            <!-- comments will get dynamically addded here from js -->
+        </section>
+    </div>
+
+    <footer>
+        <p>For more information about this movie, please visit <a href="https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi">https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi</a>.</p>
+
+        <p>&copy; 2023 Anime Movie Reviews</p>
+    </footer>
+
+
+</body>
+</html>

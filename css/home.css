@@ -1,0 +1,176 @@
+/* Style for the header */
+header {
+	background-color: #31572c;
+	color: white;
+	padding: 10px;
+	text-align: center;
+    font-family: cursive;
+}
+
+body {
+	background-color: #a3b18a;
+}
+
+/* Style for the navigation bar */
+nav {
+	background-color: #588157;
+	color: white;
+	overflow: hidden;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Style for the navigation bar links */
+nav a {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+}
+
+/* Style for the active navigation bar link */
+nav a.active {
+	background-color: #31572c;
+}
+
+/* Style to change the main area where the sections are to look nice */
+main {
+	margin: 20px;
+	text-align: center;
+}
+
+section {
+	display: inline-block;
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: calc(33% - 40px);
+	vertical-align: top;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px auto;
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+}
+
+caption {
+	background-color: #588157;
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: serif;
+	padding: 10px;
+	text-align: center;
+	color:black;
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+}
+
+th {
+	background-color: #f5f5f5;
+	border-bottom: 2px solid #ddd;
+}
+
+thead th {
+	background-color: #E8DBC5;
+	font-weight: bold;
+	font-family: serif;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+tbody td:first-child {
+	font-weight: bold;
+}
+
+tbody td {
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #E8DBC5;
+}
+
+tbody tr:nth-child(even):hover
+{
+	background-color:#cdb4db;
+}
+
+tr:hover {
+	background-color: #a2d2ff;
+}
+
+tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.gif{
+	margin-bottom: -6%;
+}
+#gif1{
+	border-style: none;
+	margin-bottom: 5%;
+}
+
+.upcoming, .watch {
+	height: 200px;
+}
+
+.watch ul{
+    list-style-type: katakana; /* make the bullets katakana */
+    color: black;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+ul a:link, ul a:visited {
+    color: black;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 700;
+   	text-decoration: none;
+}
+
+ul a:hover {
+	color:#8f57ae;
+	text-decoration: none;
+}
+
+.upcoming ul {
+	list-style-type: katakana-iroha; /* make the bullets katakana-iroha */
+    color: black;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+/* Style for scrollbar width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Style for the color of the track of scrollbar */
+::-webkit-scrollbar-track {
+	background: #a3b18a;
+}
+ 
+/* Style for the handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 30px;
+}
+
+/* Style for color for the hover on the handle */
+::-webkit-scrollbar-thumb:hover {
+	background: #666;
+}

@@ -1,0 +1,178 @@
+.panel {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+  height: 500px;
+  margin: 40px 20px 0 20px;
+}
+
+.movie-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto; /* center the movie horizontally*/
+  background-color: #F5F5DC; /* background color of the box */
+  border: 2px solid black;
+  box-sizing: border-box; /* Include border in box size */
+  width: 100%;
+  max-width: 820px; /* Set maximum width */
+}
+
+.movie {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  flex: 0 0 calc(25% - 20px); /* Set width of each movie to 25% of panel width minus margin */
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  white-space: nowrap; /* This prevents the text from wrapping */
+  overflow: hidden; /* This hides any overflow */
+  text-overflow: ellipsis; /* This adds an ellipsis at the end of the line */
+}
+
+.movie img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  border: 2px solid black;
+  box-sizing: border-box; /* Include border in image size */
+}
+
+@media only screen and (max-width: 800px) {
+  .movie {
+    flex: 0 0 calc(33.3% - 20px); /* On smaller screens, set width of each movie to 33.3% of panel width minus margin */
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+header {
+	background-color: #31572c;
+	color: white;
+	padding: 10px;
+	text-align: center;
+  font-family: cursive;
+}
+
+body{
+	background-color: #a3b18a;
+}
+
+nav {
+	background-color: #588157;
+	color: white;
+	overflow: hidden;
+	padding: 10px;
+	text-align: center;
+}
+
+nav a {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+}
+
+nav a.active {
+	background-color: #31572c;
+}
+
+/* hide the overflow scrollbar */
+.panel::-webkit-scrollbar {
+	display: none;
+}
+
+/* show the scrollbar on hover */
+.panel:hover::-webkit-scrollbar {
+	display: block;
+}
+
+/* Style for the movie panel container */
+.panel {
+	margin: 20px 0;
+}
+
+/* add a margin to the left and right of the panel to center it */
+.panel-container {
+	margin: 0 20px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* try to center the dots vertically */
+  margin-top: 10px;
+  margin-bottom: 0; /* remove bottom margin */
+}
+
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+}
+
+.dot.active {
+  background-color: #555;
+}
+
+#section1 .movie, #section2 .movie, #section3 .movie {
+  width: calc(100% / 3);
+}
+
+/* slide navigation controls */
+.controls {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+}
+
+/* Style for scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Style for the color of the track of scrollbar */
+::-webkit-scrollbar-track {
+  background: #a3b18a;
+}
+ 
+/* Style for the handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+/* Style for color for the hover on the handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
